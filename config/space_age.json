@@ -1,0 +1,431 @@
+{
+  "resources" : {
+
+  },
+
+
+  "recipes" : {
+
+  },
+
+
+  "buildings" : {
+    "burner_mining_drill" : {
+      "category" : "extractor",
+      "base_resource_drain" : 1.0,
+
+      "base_speed" : 0.25,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : false,
+
+      "is_burner" : true,
+      "base_consumption" : 150,
+      "base_pollution" : 0.2,
+      "drain" : 0.0,
+
+      "module_slots" : 0
+    },
+    "electric_mining_drill" : {
+      "category" : "extractor",
+      "base_resource_drain" : 1.0,
+
+      "base_speed" : 0.5,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 90,
+      "base_pollution" : 0.17,
+      "drain" : 0.0,
+
+      "module_slots" : 3
+    },
+    "big_mining_drill" : {
+      "category" : "extractor",
+      "base_resource_drain" : 0.5,
+
+      "base_speed" : 2.5,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 300,
+      "base_pollution" : 0.67,
+      "drain" : 0.0,
+
+      "module_slots" : 4
+    },
+    "pumpjack" : {
+      "category" : "extractor",
+      "base_resource_drain" : 1.0,
+
+      "base_speed" : 1.0,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 90,
+      "base_pollution" : 1.7,
+      "drain" : 0.0,
+
+      "module_slots" : 2
+    },
+    "agricultural_tower" : {},
+    "captive_biter_spawner" : {},
+
+    "stone_furnace" : {
+      "category" : "furnace",
+
+      "base_speed" : 1,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : false,
+
+      "is_burner" : true,
+      "base_consumption" : 90,
+      "base_pollution" : 0.04,
+      "drain" : 0.0,
+
+      "module_slots" : 0
+    },
+    "steel_furnace" : {
+      "category" : "furnace",
+
+      "base_speed" : 2,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : false,
+
+      "is_burner" : true,
+      "base_consumption" : 90,
+      "base_pollution" : 0.07,
+      "drain" : 0.0,
+
+      "module_slots" : 0
+    },
+    "electric_furnace" : {
+      "category" : "furnace",
+
+      "base_speed" : 2,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : false,
+
+      "is_burner" : false,
+      "base_consumption" : 180,
+      "base_pollution" : 0.02,
+      "drain" : 6,
+
+      "module_slots" : 2
+    },
+    "foundry" : {
+      "category" : "furnace",
+
+      "base_speed" : 4,
+      "base_productivity" : 0.5,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 2500,
+      "base_pollution" : 0.1,
+      "drain" : 83.33,
+
+      "module_slots" : 4
+    },
+    "recycler" : {
+      "category" : "furnace",
+
+      "base_speed" : 0.5,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : false,
+
+      "is_burner" : false,
+      "base_consumption" : 186,
+      "base_pollution" : 0.04,
+      "drain" : 6.0,
+
+      "module_slots" : 4
+    },
+
+    "assembly_machine_1" : {
+      "category" : "transformer",
+
+      "base_speed" : 0.5,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : false,
+
+      "is_burner" : false,
+      "base_consumption" : 75,
+      "drain" : 2.5,
+      "base_pollution" : 0.07,
+
+      "module_slots" : 0
+    },
+    "assembly_machine_2" : {
+      "category" : "transformer",
+
+      "base_speed" : 0.75,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 150,
+      "drain" : 5.0,
+      "base_pollution" : 0.05,
+
+      "module_slots" : 2
+    },
+    "assembly_machine_3" : {
+      "category" : "transformer",
+
+      "base_speed" : 1.25,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 375,
+      "drain" : 12.5,
+      "base_pollution" : 0.04,
+
+      "module_slots" : 4
+    },
+    "electromagnetic_plant" : {
+      "category" : "transformer",
+
+      "base_speed" : 2,
+      "base_productivity" : 0.5,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 2000,
+      "drain" : 66.67,
+      "base_pollution" : 0.07,
+
+      "module_slots" : 5
+    },
+    "biochamber" : {
+      "category" : "transformer",
+
+      "base_speed" : 2,
+      "base_productivity" : 0.5,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : true,
+      "base_consumption" : 500,
+      "drain" : 0.0,
+      "base_pollution" : -0.01,
+
+      "module_slots" : 4
+    },
+    "oil_refinery" : {
+      "category" : "transformer",
+
+      "base_speed" : 1,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 420,
+      "drain" : 14,
+      "base_pollution" : 0.1,
+
+      "module_slots" : 3
+    },
+    "chemical_plant" : {
+      "category" : "transformer",
+
+      "base_speed" : 1,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 210,
+      "drain" : 7,
+      "base_pollution" : 0.07,
+
+      "module_slots" : 3
+    },
+    "cryogenic_plant" : {
+      "category" : "transformer",
+
+      "base_speed" : 2,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : true,
+
+      "is_burner" : false,
+      "base_consumption" : 1500,
+      "drain" : 50,
+      "base_pollution" : 0.1,
+
+      "module_slots" : 8
+    },
+    "centrifuge" : {
+      "category" : "transformer",
+
+      "base_speed" : 1,
+      "base_productivity" : 0.0,
+      "base_quality" : 0.0,
+      "handles_fluids" : false,
+
+      "is_burner" : false,
+      "base_consumption" : 350,
+      "drain" : 11.6,
+      "base_pollution" : 0.07,
+
+      "module_slots" : 2
+    }
+  },
+
+
+  "modules" : {
+    "speed" : {
+      "base_productivity_bonus" : [0, 0, 0],
+      "quality_effects_productivity": false,
+
+      "base_speed_bonus" : [0.2, 0.3, 0.5],
+      "quality_effects_speed" : true,
+
+      "base_energy_increase" : [0.5, 0.6, 0.7],
+      "quality_effects_energy" : false,
+
+      "base_quality_bonus" : [-0.01, -0.015, -0.025],
+      "quality_effects_quality" : false,
+
+      "pollution_modifier" : [0, 0, 0]
+    },
+    "productivity" : {
+      "base_productivity_bonus" : [0.04, 0.06, 0.10],
+      "quality_effects_productivity": true,
+
+      "base_speed_bonus" : [-0.05, -0.10, -0.15],
+      "quality_effects_speed" : false,
+
+      "base_energy_increase" : [0.40, 0.60, 0.80],
+      "quality_effects_energy" : false,
+
+      "base_quality_bonus" : [0, 0, 0],
+      "quality_effects_quality" : false,
+
+      "pollution_modifier" : [0.05, 0.07, 0.10]
+    },
+    "efficiency" : {
+      "base_productivity_bonus" : [0, 0, 0],
+      "quality_effects_productivity": false,
+
+      "base_speed_bonus" : [0, 0, 0],
+      "quality_effects_speed" : false,
+
+      "base_energy_increase" : [-0.30, -0.40, -0.50],
+      "quality_effects_energy" : true,
+
+      "base_quality_bonus" : [0, 0, 0],
+      "quality_effects_quality" : false,
+
+      "pollution_modifier" : [0, 0, 0]
+    },
+    "quality" : {
+      "base_productivity_bonus" : [0, 0, 0],
+      "quality_effects_productivity": false,
+
+      "base_speed_bonus" : [-0.05, -0.05, -0.05],
+      "quality_effects_speed" : false,
+
+      "base_energy_increase" : [0, 0, 0],
+      "quality_effects_energy" : false,
+
+      "base_quality_bonus" : [0.01, 0.02, 0.025],
+      "quality_effects_quality" : false,
+
+      "pollution_modifier" : [0, 0, 0]
+    }
+  },
+
+
+  "transporters" : {
+    "yellow_belt" : {
+      "speed": 15,
+      "lanes": 2,
+      "can_stack": true
+    },
+    "red_belt" : {
+      "speed": 30,
+      "lanes": 2,
+      "can_stack": true
+    },
+    "blue_belt" : {
+      "speed": 45,
+      "lanes": 2,
+      "can_stack": true
+    },
+    "turbo_belt" : {
+      "speed": 60,
+      "lanes": 2,
+      "can_stack": true
+    },
+    "pipe" : {
+      "speed": 100000,
+      "lanes": 1,
+      "can_stack": false
+    }
+  },
+
+
+  "inserters" : {
+    "burner_inserter" : {
+      "ticks_per_turn" : 76,
+      "capacity_upgrades" : [1, 1, 2, 2, 2, 2, 2, 3],
+      "power_modifier" : 50,
+      "energy_per_transfer" : 66.9,
+      "drain" : 0.0
+    },
+    "inserter" : {
+      "ticks_per_turn" : 70,
+      "capacity_upgrades" : [1, 1, 2, 2, 2, 2, 2, 3],
+      "power_modifier" : 5,
+      "energy_per_transfer" : 6.65,
+      "drain" : 0.4
+    },
+    "long_handed_inserter" : {
+      "ticks_per_turn" : 50,
+      "capacity_upgrades" : [1, 1, 2, 2, 2, 2, 2, 3],
+      "power_modifier" : 4,
+      "energy_per_transfer" : 7,
+      "drain" : 0.4
+    },
+    "fast_inserter" : {
+      "ticks_per_turn" : 24,
+      "capacity_upgrades" : [1, 1, 2, 2, 2, 2, 2, 3],
+      "power_modifier" : 7,
+      "energy_per_transfer" : 8.12,
+      "drain" : 0.5
+    },
+    "bulk_inserter" : {
+      "ticks_per_turn" : 24,
+      "capacity_upgrades" : [2, 3, 4, 5, 6, 8, 10, 12],
+      "power_modifier" : 20,
+      "energy_per_transfer" : 23.2,
+      "drain" : 1.0
+    },
+    "stack_inserter" : {
+      "ticks_per_turn" : 24,
+      "capacity_upgrades" : [6, 7, 8, 9, 10, 12, 14, 16],
+      "power_modifier" : 40,
+      "energy_per_transfer" : 46.4,
+      "drain" : 1.0
+    }
+  }
+}
