@@ -1,0 +1,1 @@
+CONFIG_PATH = "../config/space_age.json"

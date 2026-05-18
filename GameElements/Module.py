@@ -2,6 +2,8 @@ from utils import readJSON
 
 from GameElements.Quality import Quality
 
+from ModelElements.config import CONFIG_PATH
+
 class Module:
     type : str
     quality : Quality

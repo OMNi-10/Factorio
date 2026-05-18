@@ -2,7 +2,7 @@ from GameElements.Resource import Resource
 
 from utils import readJSON
 
-CONFIG_PATH : str
+from ModelElements.config import CONFIG_PATH
 
 class Recipe:
     name : str

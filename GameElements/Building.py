@@ -1,9 +1,10 @@
 from enum import Enum
 
-from Module import Module
-from Quality import Quality
+from GameElements.Module import Module
+from GameElements.Quality import Quality
+from utils import readJSON
 
-CONFIG_PATH : str
+from ModelElements.config import CONFIG_PATH
 
 class Category(Enum):
     EXTRACTOR = "extractor"
@@ -33,8 +34,37 @@ class Building:
     modules: list[Module]
     # beacon_modules: list[Module]
 
+    def __init__(self, type : str, quality : Quality = Quality.NORMAL, modules : list[Module] = None):
+        self.type = type
+        self.quality = quality
+
+        data = readJSON(CONFIG_PATH)
+        buildings = data["buildings"]
+
+        if type not in buildings:
+            raise ValueError(f"Building type '{type}' not supported")
+
+        building_data = buildings[type]
+        self.base_speed = building_data["base_speed"]
+        self.base_productivity = building_data["base_productivity"]
+        self.base_quality = building_data["base_quality"]
+        self.handles_fluids = building_data["handles_fluids"]
+
+        self.is_burner = building_data["is_burner"]
+        self.base_consumption = building_data["base_consumption"]
+        self.base_pollution = building_data["base_pollution"]
+        self.drain = building_data["drain"]
+
+        self.module_slots = building_data["module_slots"]
+
+        if modules is None:
+            self.modules = []
+        else:
+            assert(len(modules) <= self.module_slots), f"There may not be more than {self.module_slots} modules in building type {type}"
+            self.modules = modules
+
     def crafting_speed(self) -> float:
-        crafting_speed = self.base_crafting_speed
+        crafting_speed = self.base_speed
         for module in self.modules:
             crafting_speed += 1 - module.speed_modifier()
         return crafting_speed
@@ -42,7 +72,7 @@ class Building:
     def productivity(self) -> float:
         productivity = self.base_productivity
         for module in self.modules:
-            productivity += 1 - module.productivity_modifier()
+            productivity += module.productivity_modifier()
         return productivity
 
     def energy_modifier(self) -> float:
@@ -59,3 +89,10 @@ class Building:
 
     def energy_consumption(self) -> float:
         return self.base_consumption * self.energy_modifier() + self.drain
+
+
+if __name__ == "__main__":
+    CONFIG_PATH = "../config/space_age.json"
+    building = Building("assembly_machine_3")
+
+    print(building.energy_consumption())

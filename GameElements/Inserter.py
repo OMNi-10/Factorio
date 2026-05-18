@@ -1,8 +1,8 @@
 from utils import readJSON
 
 from Quality import Quality
+from ModelElements.config import CONFIG_PATH
 
-CONFIG_PATH : str
 CAPACITY_UPGRADE: int
 
 class Inserter:
